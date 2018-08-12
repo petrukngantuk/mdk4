@@ -147,12 +147,12 @@ endif
 
 ifeq ($(GCC_OVER49), 0)
 	ifeq ($(GCC_OVER41), 1)
-		COMMON_CFLAGS += -fno-stack-protector
+		COMMON_CFLAGS += -fstack-protector
 	endif
 endif
 
 ifeq ($(GCC_OVER49), 1)
-	COMMON_CFLAGS += -fno-stack-protector-strong
+	COMMON_CFLAGS += -fstack-protector-strong
 endif
 
 ifeq ($(GCC_OVER45), 1)
